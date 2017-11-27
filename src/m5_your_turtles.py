@@ -10,7 +10,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# Done: 2.
 #
 #  You should have RUN the PREVIOUS module and READ its code.
 #  (Do so now if you have not already done so.)
@@ -38,21 +38,29 @@ craig=rg.SimpleTurtle()
 craig.pen=rg.Pen("red",12)
 craig.speed=5
 
-for x in range(15):
-    jacob.forward(100)
-    craig.backward(100)
+for k in range(7):
+    jacob.forward(100+20*k)
+    craig.backward(100+20*k)
     jacob.left(90)
     craig.left(90)
     jacob.forward(100)
     craig.forward(100)
     jacob.left(90)
     craig.right(90)
-    jacob.forward(100)
-    craig.forward(100)
+    jacob.forward(100+20*k)
+    craig.forward(100+20*k)
     jacob.left(90)
     craig.right(90)
     jacob.forward(90)
     craig.forward(90)
+    jacob.pen_up()
+    craig.pen_up()
+    jacob.forward(50)
+    craig.forward(50)
+    jacob.left(90)
+    craig.left(90)
+    jacob.pen_down()
+    craig.pen_down()
 
 
 window.close_on_mouse_click()
