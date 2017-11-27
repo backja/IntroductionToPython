@@ -36,7 +36,7 @@ jacob.pen=rg.Pen("green",12)
 jacob.speed=5
 craig=rg.SimpleTurtle()
 craig.pen=rg.Pen("red",12)
-craig.speed=5
+craig.speed=4
 
 for k in range(7):
     jacob.forward(100+20*k)
