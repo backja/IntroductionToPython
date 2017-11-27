@@ -66,7 +66,7 @@ for k in range(13):
     blue_turtle.pen_up()
     blue_turtle.right(45)
     blue_turtle.forward(10)
-    blue_turtle.left(45)
+    blue_turtle.left(45-k)
 
     # Put the pen down again (so drawing resumes).
     # Make the size for the NEXT square be 12 pixels smaller.
